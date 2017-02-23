@@ -1,0 +1,5 @@
+//cmake options to be passed to the project
+#define fltktest_VERSION_MAJOR @fltktest_VERSION_MAJOR@
+#define fltktest_VERSION_MINOR @fltktest_VERSION_MINOR@
+
+#cmakedefine DUMP_INFO

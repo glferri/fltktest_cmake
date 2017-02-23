@@ -1,0 +1,16 @@
+#FLTK_WRAP_UI(Ui ui.fl)
+#ADD_LIBRARY(Ui callbacks.cpp ${Ui_FLTK_UI_SRCS})
+
+
+ADD_EXECUTABLE(main main.cpp)
+#ADD_DEPENDECIES(main Ui)
+set_property(TARGET main PROPERTY CXX_STANDARD 11)
+
+#TARGET_LINK_LIBRARIES(main Ui)
+TARGET_LINK_LIBRARIES(main ${FLTK_LIBRARIES})
+#TARGET_LINK_LIBRARIES(main ${OPENGL_LIBRARIES})
+
+
+# add the install targets
+install (TARGETS main DESTINATION bin)
+

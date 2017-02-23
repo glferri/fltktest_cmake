@@ -1,0 +1,2 @@
+/usr/local/include/fltktest_config.h
+/usr/local/bin/main
